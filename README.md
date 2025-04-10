@@ -1,6 +1,6 @@
 # 🗂️ Task Manager - Gerenciador de Tarefas
 
-Este é um projeto de **Gerenciador de Tarefas** simples e funcional, construído com `PHP`, `MySQL`, `JavaScript`, `Bootstrap` e empacotado com `Docker Compose`. Ele permite `criar, listar, editar, excluir` por status, com uma interface moderna e responsiva.
+Este é um projeto de **Gerenciador de Tarefas** simples e funcional, construído com `PHP`, `MySQL`, `JavaScript`, `Bootstrap` e empacotado com `Docker Compose`. Ele permite `criar, listar, editar, excluir` com estatus, com uma interface moderna e responsiva.
 
 ---
 
