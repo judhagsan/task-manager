@@ -139,41 +139,17 @@ function renderStats(stats) {
 
 // Configura os listeners de eventos
 function setupEventListeners() {
-  // Novo botão de tarefa
   $("#newTaskBtn").click(() => {
     resetTaskForm();
     $("#modalTitle").text("Nova Tarefa");
     $("#taskModal").modal("show");
   });
 
-  // Formulário de tarefa
   $("#taskForm").submit(async function (e) {
     e.preventDefault();
     await saveTask();
   });
 
-  // Filtros
-  $(".filter-btn").click(function () {
-    currentFilter = $(this).data("filter");
-    $(".filter-btn").removeClass("active");
-    $(this).addClass("active");
-    loadTasks();
-  });
-
-  // Pesquisa
-  $("#searchBtn").click(() => {
-    currentSearch = $("#searchInput").val();
-    loadTasks();
-  });
-
-  $("#searchInput").keypress(function (e) {
-    if (e.which === 13) {
-      currentSearch = $(this).val();
-      loadTasks();
-    }
-  });
-
-  // Delegation para botões dinâmicos
   $("#tasksTable").on("click", ".edit-btn", async function () {
     const taskId = $(this).closest("tr").data("id");
     await editTask(taskId);
