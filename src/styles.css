@@ -1,0 +1,144 @@
+:root {
+  --color-pending: #6c757d;
+  --color-in-progress: #fd7e14;
+  --color-completed: #198754;
+}
+
+body {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.table {
+  margin-top: 0;
+}
+
+.table th {
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-pendente {
+  background-color: var(--color-pending);
+  color: white;
+}
+
+.status-em-andamento {
+  background-color: var(--color-in-progress);
+  color: white;
+}
+
+.status-finalizado {
+  background-color: var(--color-completed);
+  color: white;
+}
+
+.stats-cards .card {
+  text-align: center;
+  padding: 15px;
+  border: none;
+}
+
+.stats-cards .card-body {
+  padding: 10px;
+}
+
+.stats-cards .count {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.stats-cards .label {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+#searchInput {
+  max-width: 300px;
+}
+
+.btn-action {
+  padding: 5px 10px;
+  margin: 0 2px;
+}
+
+.task-title {
+  font-weight: 500;
+}
+
+.task-description {
+  color: #6c757d;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+#loading {
+  display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .stats-cards .col {
+    margin-bottom: 10px;
+  }
+
+  .filter-btn {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+.task-description {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.table-hover tbody tr {
+  vertical-align: top;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  min-height: 300px;
+}
+
+.toast {
+  font-size: 0.9rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.text-bg-success {
+  background-color: #d1e7dd !important;
+  color: #0f5132 !important;
+  border-color: #badbcc !important;
+}
+
+.text-bg-danger {
+  background-color: #f8d7da !important;
+  color: #842029 !important;
+  border-color: #f5c2c7 !important;
+}
+
+.toast-body {
+  display: flex;
+  align-items: center;
+}
