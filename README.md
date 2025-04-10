@@ -1,6 +1,6 @@
 # 🗂️ Task Manager - Gerenciador de Tarefas
 
-Este é um projeto de **Gerenciador de Tarefas** simples e funcional, construído com `PHP`, `MySQL`, `JavaScript`, `Bootstrap` e empacotado com `Docker Compose`. Ele permite `criar, listar, editar, excluir` com estatus, com uma interface moderna e responsiva.
+Este é um projeto de **Gerenciador de Tarefas** simples e funcional, construído com `PHP`, `MySQL`, `JavaScript`, `Bootstrap` e empacotado com `Docker Compose`. Ele permite `criar, listar, editar, excluir` com status e com uma interface moderna e responsiva.
 
 ---
 
@@ -63,7 +63,7 @@ Este é um projeto de **Gerenciador de Tarefas** simples e funcional, construíd
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/judhagsan/task-manager.git
+   git clone git@github.com:judhagsan/task-manager.git
    cd task-manager
    ```
 
